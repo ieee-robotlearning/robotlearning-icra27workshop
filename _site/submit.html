@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Robot Learning in the Era of Foundation Models</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:image" content="images/preview.JPG" />
+  <meta name="twitter:image" content="images/preview.JPG" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="description" content="ICRA 2027 half-day workshop on standardization, benchmarking, and real-world evaluation of robot learning in the era of foundation models." />
+  <script>
+    /* JavaScript module code here */
+    function localize_time(timeString) {
+      var hours = timeString.split(":")[0].padStart(2, "0");
+      var minutes = timeString.split(":")[1].padStart(2, "0");
+      var datetime = new Date('1970-01-02T' + hours + ":" + minutes + ':00Z');
+      return datetime.getHours() + ":" + datetime.getMinutes().toString().padStart(2, "0");
+    }
+
+    function adjustTimes() {
+      // change timezone abbreviation in table header
+      tz_abbrev = new Date().toLocaleTimeString('en-us', { timeZoneName: 'short' }).split(' ')[2];
+      document.querySelectorAll(".timezone-abbrev").forEach(node => node.textContent = tz_abbrev);
+      // change times to local timezone
+      document.querySelectorAll(".time-value").forEach(node => node.textContent = localize_time(node.textContent));
+
+    }
+  </script>
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+
+  <div class="container" id="header">
+
+    <div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-main"
+        aria-controls="navbar-main" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div> <!-- navbar-header -->
+
+    <div class="collapse navbar-collapse" id="navbar-main">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-link"><a href="/index.html">About</a></li>
+        <li class="nav-link"><a href="/submit.html">Call for Papers</a></li>
+        <li class="nav-link"><a href="/schedule.html">Schedule</a></li>
+        <li class="nav-link"><a href="/papers.html">Papers</a></li>
+
+      </ul>
+
+    </div> <!-- navbar-main -->
+
+  </div>
+
+</nav> <!-- navbar -->
+
+<body onload="adjustTimes();">
+
+  <div id="content-wrap">
+    <div class="container" id="content">
+
+      <section id="hero-section" class="hero-heading">
+        <h1>Robot Learning in the Era of Foundation Models: Standardization, Benchmarking and Real-World Evaluation</h1>
+        <h4>ICRA 2027 Half-day Workshop</h4>
+        <p>Lorem ipsum</p>
+        <p class="venue">Lorem ipsum</p>
+      </section>
+
+      <div class="page-content">
+
+        <div class="row main-content">
+  <h2 class="page-title">Call for Papers</h2>
+  <p>
+    The workshop includes an open call for <strong>short, non-archival papers</strong> on robot learning in the era of foundation models, with emphasis on standardization, benchmarking, and real-world evaluation. Selected contributions will be presented in a poster session, and three papers will be invited for spotlight presentations. Student presentations are part of the program.
+  </p>
+  <p>Topics of interest include:</p>
+  <ul class="topics-list">
+    <li>What is a trial when the world cannot be reset?</li>
+    <li>How do we distinguish genuine generalization from a fortunate test distribution?</li>
+    <li>What replaces centralized execution when policies cannot be shipped to every platform?</li>
+    <li>How many trials are enough, and what must be reported alongside the number?</li>
+    <li>Which behavioural, robustness, and safety metrics are measurable in the field?</li>
+    <li>What constitutes a fair real-world trial?</li>
+    <li>How should generalization be measured?</li>
+    <li>Which metrics should accompany success rate?</li>
+    <li>How should evaluation account for embodiment, environmental variation, safety, intervention, and deployment cost?</li>
+  </ul>
+
+  <p><b>Submission site:</b> Lorem ipsum</p>
+  <p><b>Submission policy:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Sed posuere consectetur est at lobortis. Donec ullamcorper nulla non metus auctor fringilla.</p>
+
+  <h3>Awards and Travel Support</h3>
+  <ul>
+    <li><strong>Best Student Presentation</strong> and <strong>Best Poster</strong> awards, sponsored by NVIDIA. Prize details: Lorem ipsum.</li>
+    <li><strong>Travel support</strong> for selected students from underrepresented groups, provided by the IEEE RAS Robot Learning Technical Committee. Support details: Lorem ipsum.</li>
+  </ul>
+
+  <h3>Important Dates and Links</h3>
+  <table class="table table-striped">
+    <tbody>
+      <tr>
+        <td>Submission site opens</td>
+        <td>Lorem ipsum</td>
+      </tr>
+      <tr>
+        <td>Submission site</td>
+        <td>Lorem ipsum</td>
+      </tr>
+      <tr>
+        <td>Submission deadline</td>
+        <td>Lorem ipsum</td>
+      </tr>
+      <tr>
+        <td>Decisions announced</td>
+        <td>Lorem ipsum</td>
+      </tr>
+      <tr>
+        <td>Camera-ready due</td>
+        <td>Lorem ipsum</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+      </div> <!-- page-content -->
+
+    </div> <!-- container -->
+  </div> <!-- content-wrap -->
+
+
+  <div class="footnote bg-light">
+    <div class="container">
+      <p>For questions / comments, reach out to: Lorem ipsum</p>
+      <p>Website template adapted from the <a href="https://orlrworkshop.github.io/">ORLR</a>/<a
+          href="https://oolworkshop.github.io/">OOL</a> workshops, originally based on the template of the <a
+          href="https://baicsworkshop.github.io/">BAICS</a> workshop.</p>
+    </div>
+  </div>
+</body>
+
+</html>

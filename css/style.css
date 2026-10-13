@@ -1,0 +1,750 @@
+a {
+  color: #337ab7;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  /*padding-top: 120px;*/
+  font-size: 1rem;
+  line-height: 1.5;
+  /*font-family: 'Palatino',serif;*/
+  /*font-size: 18px;*/
+  /*line-height: 30px;*/
+}
+
+h1, h2, h3 {
+  font-family: Roboto, sans-serif;
+  color: #212529;  /* 505160 */
+  margin-bottom: 20px;
+}
+
+dl, ol, ul {
+  margin: 20px;
+}
+
+p, ul, ol {
+  margin-top: 0px;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+hr {
+  width: 100%;
+}
+
+table {
+  margin-top: 0;
+  width: 100%;
+}
+
+.table td, .table th {
+  border: none;
+}
+
+/* .table td {
+  /* border: none; */
+  /* width: 10px; */
+/* } */ 
+#schedule th.time, #schedule td.time {
+  width: 150px;  /* Adjust this value to increase or decrease the width */
+}
+
+#papers th.time, #papers td.time {
+  width: 200px;  /* Adjust this value to increase or decrease the width */
+}
+
+.no-bottom-margin {
+  margin-bottom: 0;
+}
+
+#navbar {
+  border-bottom: 1px solid #e7e7e7;
+  padding-top: 0;
+  padding-bottom: 0;
+  /*position: fixed;*/
+}
+
+.navbar-light .navbar-nav .nav-link {
+  padding-top: 10px;
+  padding-bottom: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.navbar-light .navbar-nav .nav-link a {
+  color: #337ab7;
+  padding: 0;
+  font-size: 18px;
+}
+
+.navbar .navbar-nav {
+  margin-top: 10px;
+}
+
+.navbar-light .navbar-toggler {
+  border: none;
+}
+
+/* .strike {
+  text-decoration: line-through;
+} */
+
+#references li {
+  font-size: 14px;
+}
+
+#references ol {
+   padding-left: 5px;
+}
+
+#goals-and-outcomes li {
+   margin: 10px 0;
+}
+
+#goals-and-outcomes ol {
+   padding-left: 5px;
+}
+
+#goals-and-outcomes ul {
+   padding-left: 10px;
+}
+
+#organizers ul {
+  margin-left: 20px;
+}
+
+.speaker-profile {
+  float: left;
+  width: 200px;
+  padding-right: 20px;
+  padding-bottom: 15px
+}
+
+#pc td {
+  padding-right: 3em;
+  padding-left: 1em;
+}
+
+#program td {
+	padding: 10px;
+  /* width: 300px; */
+}
+
+#content {
+  padding-bottom: 60px;
+}
+
+.footnote {
+  padding: 25px 15px 15px 15px;
+  color: #666666;
+}
+
+.slp {
+  background: #fff;
+  padding: 10px;
+  border: 4px solid #eee;
+  box-shadow: rgb(204, 204, 204) 2px 2px 14px 0px;
+  margin-right: 10px;
+}
+
+.rocket {
+  background: #fff;
+  padding: 10px;
+  border: 4px solid #eee;
+  box-shadow: rgb(204, 204, 204) 2px 2px 14px 0px;
+  margin-left: 10px;
+}
+
+.paper ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+}
+
+.paper h3 {
+  color: #9B4F0F;
+}
+
+.col {
+  padding: 0;
+}
+
+.row {
+  margin: 20px;
+}
+
+table .time {
+  width: 120px;
+}
+
+.dot-invited-talk {
+  height: 12px;
+  width: 12px;
+  background-color: #ee1111;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot-panel-discussion {
+  height: 12px;
+  width: 12px;
+  background-color: #2d89ef;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot-lightning-talk {
+  height: 12px;
+  width: 12px;
+  background-color: #00aba9;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot-poster-session {
+  height: 12px;
+  width: 12px;
+  background-color: #ffc40d;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot-other-session {
+  height: 12px;
+  width: 12px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot-breakout {
+  height: 12px;
+  width: 12px;
+  background-color: #6f42c1;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+:target::before {
+  content: "";
+  display: block;
+  height: 72px; /* fixed header height*/
+  margin: -72px 0 0; /* negative fixed header height */
+}
+
+@media (min-width: 768px) {
+  /* .container {
+    width: 900px;
+  } */
+
+  #header {
+    /* width: 900px; */
+    padding: 0px;
+  }
+
+  .navbar .navbar-nav {
+    float: none;
+    vertical-align: top;
+  }
+
+  .navbar .navbar-collapse {
+    text-align: center;
+  }
+}
+
+html {
+  background: #ffffff;
+}
+
+body {
+  background: transparent;
+}
+
+.parallax-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../images/RSS_Banner.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+#navbar {
+  position: relative;
+  z-index: 10;
+}
+
+#content-wrap {
+  position: relative;
+  z-index: 5;
+  background: #ebd3b6;
+  width: 100%;
+}
+
+#content {
+  background: #ffffff;
+}
+
+.footnote {
+  position: relative;
+  z-index: 5;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  text-align: center;
+  background: transparent;
+  z-index: 2;
+}
+
+.hero-heading {
+  text-align: center;
+  padding: 4em 1em 1.5em;
+  background: #ffffff;
+}
+
+.hero-heading h1 {
+  margin-bottom: 0.25em;
+  font-size: 2.05em;
+  font-weight: 700;
+  color: #212529;
+  line-height: 1.25;
+}
+
+.hero-heading h4 {
+  margin-bottom: 0.6em;
+  font-weight: 400;
+  color: #555;
+  font-size: 1.4em;
+}
+
+.hero-heading p {
+  margin-bottom: 0.2em;
+  color: #666;
+  font-size: 1em;
+}
+
+.venue {
+  margin: 0.4em auto;
+  line-height: 1.35;
+}
+
+.hero-heading .venue a {
+  color: #337ab7;
+  text-decoration: none;
+}
+
+.hero-heading .venue a:hover {
+  text-decoration: underline;
+}
+
+.venue .venue-detail {
+  font-size: 0.85em;
+  opacity: 0.8;
+}
+
+.banner-text .venue {
+  font-size: 1.2vw;
+}
+
+.banner-text .venue a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.banner-text .venue .venue-detail {
+  font-weight: 400;
+}
+
+.btn-learn-more {
+  display: inline-block;
+  margin-top: 1.5em;
+  padding: 0.7em 2em;
+  background: #337ab7;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1em;
+  font-weight: 600;
+  font-family: Roboto, sans-serif;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.btn-learn-more:hover,
+.btn-learn-more:focus {
+  background: #285e8e;
+  color: #ffffff;
+  outline: none;
+}
+
+.banner-text .btn-learn-more {
+  margin-top: 0.8em;
+  padding: 0.5em 1.6em;
+  font-size: 1.3vw;
+  font-weight: 600;
+}
+
+.description-toggle-wrap {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+.btn-description-toggle {
+  display: inline-block;
+  padding: 0.5em 1.4em;
+  background: transparent;
+  color: #337ab7;
+  border: 1px solid #337ab7;
+  border-radius: 4px;
+  font-size: 0.95em;
+  font-weight: 500;
+  font-family: Roboto, sans-serif;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.btn-description-toggle:hover,
+.btn-description-toggle:focus {
+  background: #337ab7;
+  color: #ffffff;
+  outline: none;
+}
+
+.description-content {
+  width: 100%;
+  text-align: justify !important;
+  margin-top: 0.8em;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 2em;
+  font-weight: 700;
+  color: #212529;
+  margin: 0.5em 0 1.2em;
+  padding-bottom: 0.4em;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+#speakers h5.section-heading {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 0.4em;
+}
+
+.more-speakers-tease {
+  text-align: center;
+  font-style: italic;
+  color: #666;
+  margin-top: 1.5em;
+  font-size: 0.95em;
+}
+
+.sponsor-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5em;
+  padding: 1em 0;
+  width: 100%;
+}
+
+.sponsor-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sponsor-logo img {
+  max-height: 100px;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+.sponsor-logo img[alt="New Theory AI"] {
+  max-height: 58px;
+}
+
+.sponsor-placeholder {
+  min-width: 180px;
+  min-height: 72px;
+  padding: 0.6em 1.2em;
+  border: 1px dashed #bbb;
+  border-radius: 8px;
+  color: #888;
+  font-style: italic;
+}
+
+.person-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #e7d3b8;
+  color: #3d342b;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 0.02em;
+}
+
+.person-avatar-lg {
+  width: 150px;
+  height: 150px;
+  font-size: 2.2rem;
+}
+
+#schedule td:first-child {
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .sponsor-row {
+    gap: 1.5em;
+  }
+  .sponsor-logo img {
+    max-height: 60px;
+  }
+
+  .sponsor-logo img[alt="New Theory AI"] {
+    max-height: 35px;
+  }
+}
+
+.topics-list {
+  column-count: 2;
+  column-gap: 2.5em;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 2.5em;
+}
+
+.topics-list li {
+  break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  margin-bottom: 0.4em;
+}
+
+@media (max-width: 768px) {
+  .topics-list {
+    column-count: 1;
+    -webkit-column-count: 1;
+  }
+}
+
+.banner-text {
+  position: absolute;
+  bottom: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.55);
+  color: #FFFFFF;
+  padding: 12px 26px;
+  border-radius: 10px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+  max-width: 80%;
+  box-sizing: border-box;
+  display: block;
+  line-height: 1.25;
+}
+
+.banner-text h1,
+.banner-text h2,
+.banner-text h3 {
+  color: #FFFFFF;
+  margin-bottom: 6px;
+  font-family: Roboto, sans-serif;
+  font-size: 2.15vw;
+  line-height: 1.25;
+}
+
+.banner-text h4 {
+  color: #FFFFFF;
+  margin-bottom: 4px;
+  font-family: Roboto, sans-serif;
+  font-size: 1.9vw;
+  font-weight: 500;
+}
+
+.banner-text p {
+  color: #FFFFFF;
+  margin-bottom: 2px;
+  font-family: Roboto, sans-serif;
+  font-size: 1.4vw;
+  font-weight: 400;
+}
+
+.banner-text p:last-child {
+  margin-bottom: 0;
+}
+
+.main-content {
+  width: 80% !important;
+  margin: 20px auto !important;
+  text-align: left !important;
+  padding: 0 !important;
+  box-sizing: border-box;
+  display: block;
+}
+
+
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  .banner-text {
+    display: none !important;
+  }
+
+  .banner-text h1,
+  .banner-text h2,
+  .banner-text h3 {
+    font-size: 4.2vw !important;
+    margin-bottom: 2px !important;
+    line-height: 1.15 !important;
+  }
+
+  .banner-text h4 {
+    font-size: 2.4vw !important;
+    margin-bottom: 1px !important;
+  }
+
+  .banner-text p {
+    font-size: 1.7vw !important;
+    margin-bottom: 1px !important;
+  }
+
+  .main-content {
+    width: 95% !important;
+    margin: 20px auto !important;
+    padding: 0 10px !important;
+  }
+
+  .banner {
+    height: 30vh !important;
+  }
+
+  #navbar,
+  #navbar.bg-light,
+  nav#navbar.bg-light {
+    background: transparent !important;
+    background-color: transparent !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+  }
+
+  #navbar .navbar-collapse.show,
+  #navbar .navbar-collapse.collapsing {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 0.4em 0.6em;
+    border-radius: 0 0 8px 8px;
+    margin-top: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .parallax-bg {
+    background-size: 100% auto !important;
+    background-position: center top !important;
+    background-color: #ebd3b6;
+  }
+
+  .hero-heading {
+    padding: 2.5em 1em 1em;
+  }
+
+  .hero-heading h1 {
+    font-size: 1.45em;
+  }
+
+  .hero-heading h4 {
+    font-size: 1.1em;
+  }
+
+  .hero-heading p {
+    font-size: 0.95em;
+  }
+
+  .btn-learn-more {
+    padding: 0.6em 1.6em;
+  }
+}
+
+/* Tablet-specific styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .banner-text {
+    padding: 6px 14px;
+  }
+
+  .banner-text h1,
+  .banner-text h2,
+  .banner-text h3 {
+    font-size: 2.2vw;
+    line-height: 1.25;
+  }
+
+  .banner-text h4 {
+    font-size: 1.7vw;
+  }
+
+  .banner-text p {
+    font-size: 1.3vw;
+  }
+
+  .main-content {
+    width: 90% !important;
+    margin: 20px auto !important;
+  }
+}
+
+/* Cap font scaling on very large screens so the title doesn't balloon */
+@media (min-width: 2400px) {
+  .banner-text h1,
+  .banner-text h2,
+  .banner-text h3 {
+    font-size: 42px;
+    line-height: 1.25;
+  }
+
+  .banner-text h4 {
+    font-size: 46px;
+  }
+
+  .banner-text p {
+    font-size: 34px;
+  }
+
+  .banner-text .btn-learn-more {
+    font-size: 32px;
+  }
+}
