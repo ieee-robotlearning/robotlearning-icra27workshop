@@ -1,3 +1,5 @@
+url: "https://ieee-robotlearning.github.io"
+baseurl: "/robotlearning-icra27workshop"
 lsi: false
 safe: true
 incremental: false

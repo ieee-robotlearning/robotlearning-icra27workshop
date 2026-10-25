@@ -33,7 +33,7 @@ jekyll serve
 
 5. **View the site**
 
-Open your browser to: [http://localhost:4000](http://localhost:4000)
+Open your browser to: [http://localhost:4000/robotlearning-icra27workshop/](http://localhost:4000/robotlearning-icra27workshop/)
 
 ## Local Development (macOS)
 
@@ -87,7 +87,7 @@ bundle exec jekyll serve
 
 7. **View the site**
 
-Open your browser to: [http://localhost:4000](http://localhost:4000)
+Open your browser to: [http://localhost:4000/robotlearning-icra27workshop/](http://localhost:4000/robotlearning-icra27workshop/)
 
 ---
 
