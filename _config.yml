@@ -11,3 +11,31 @@ exclude:
   - scripts
   - vendor
   - Gemfile
+  - Gemfile.lock
+  - README.md
+  - requirements.txt
+
+# Site-wide text used by the layout
+title: "Robot Learning in the Era of Foundation Models"
+description: "ICRA 2027 half-day workshop on standardization, benchmarking, and real-world evaluation of robot learning in the era of foundation models."
+
+workshop:
+  title: "Robot Learning in the Era of Foundation Models: Standardization, Benchmarking and Real-World Evaluation"
+  subtitle: "ICRA 2027 Half-day Workshop"
+  date: "TBA"
+  venue: "TBA"
+  openreview: ""   # put the OpenReview submission URL here when it is live
+
+contact:
+  name: "Peyman Moghadam"
+  email: "peyman.moghadam@qut.edu.au"
+
+nav:
+  - name: About
+    url: /
+  - name: Call for Papers
+    url: /submit.html
+  - name: Schedule
+    url: /schedule.html
+  - name: Papers
+    url: /papers.html

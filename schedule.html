@@ -1,85 +1,41 @@
 ---
 layout: default
+title: Schedule
 ---
-<div class="contributed talks">
-  <h2 class="page-title">Schedule</h2>
-  <p>
-    Half-day, in-person program. Date and room: TBA. Times are local. <span class="dot-invited-talk"></span> Invited talk,
-    <span class="dot-panel-discussion"></span> Panel,
-    <span class="dot-lightning-talk"></span> Spotlight presentations,
-    <span class="dot-poster-session"></span> Poster session,
-    <span class="dot-breakout"></span> Breakout,
-    <span class="dot-other-session"></span> Other.
-  </p>
-  <table class="table table-striped table-condensed" id="schedule">
-    <thead>
-      <tr>
-        <th class="time">Time</th>
-        <th>Speaker/Moderator</th>
-        <th>Title</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="dot-other-session"></span> 08:30 – 08:45</td>
-        <td>Organizers</td>
-        <td>Opening and framing: How should we evaluate robot learning in the foundation-model era? Participant polling</td>
-      </tr>
-      <tr>
-        <td><span class="dot-invited-talk"></span> 08:45 – 09:05</td>
-        <td>Prof. Hae-Won Park (KAIST)</td>
-        <td>Talk title TBA</td>
-      </tr>
-      <tr>
-        <td><span class="dot-invited-talk"></span> 09:05 – 09:25</td>
-        <td>Dr. Xuning Yang (NVIDIA Seattle Robotics Lab)</td>
-        <td>Talk title TBA</td>
-      </tr>
-      <tr>
-        <td><span class="dot-invited-talk"></span> 09:25 – 09:45</td>
-        <td>Dr. Shehryar Khattak (Director of Technology, Field AI)</td>
-        <td>Talk title TBA</td>
-      </tr>
-      <tr>
-        <td><span class="dot-invited-talk"></span> 09:45 – 10:05</td>
-        <td>Prof. Hadas Kress-Gazit (Cornell / TRI)</td>
-        <td>Talk title TBA</td>
-      </tr>
-      <tr>
-        <td><span class="dot-lightning-talk"></span> 10:05 – 10:20</td>
-        <td>Contributed authors</td>
-        <td>Three contributed spotlight presentations</td>
-      </tr>
-      <tr>
-        <td><span class="dot-poster-session"></span> 10:20 – 10:55</td>
-        <td></td>
-        <td>Poster session and coffee</td>
-      </tr>
-      <tr>
-        <td><span class="dot-breakout"></span> 10:55 – 11:25</td>
-        <td>All participants</td>
-        <td>Breakout discussions: metrics, generalization, real-world protocols and reporting standards</td>
-      </tr>
-      <tr>
-        <td><span class="dot-breakout"></span> 11:25 – 11:40</td>
-        <td>Breakout groups</td>
-        <td>Breakout report-back</td>
-      </tr>
-      <tr>
-        <td><span class="dot-panel-discussion"></span> 11:40 – 12:15</td>
-        <td>Prof. David Hsu (NVIDIA Singapore), Prof. Angela Schoellig (TUM), Dr. Will Maddern (Wayve)</td>
-        <td>Moderated debate with industry and academia: What should a benchmark for real-world robot learning actually measure?</td>
-      </tr>
-      <tr>
-        <td><span class="dot-other-session"></span> 12:15 – 12:25</td>
-        <td>Organizers</td>
-        <td>Best Student Presentation and Best Poster awards; community next steps</td>
-      </tr>
-      <tr>
-        <td><span class="dot-other-session"></span> 12:25 – 12:30</td>
-        <td>Organizers</td>
-        <td>Closing</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Schedule</h2>
+    <p class="has-text-centered section-intro">
+      Half-day, in-person program. Date and room: TBA. Times are local.
+    </p>
+
+    <div class="legend">
+      <span class="tag is-white"><span class="dot dot-invited"></span>Invited talk</span>
+      <span class="tag is-white"><span class="dot dot-panel"></span>Panel</span>
+      <span class="tag is-white"><span class="dot dot-spotlight"></span>Spotlight presentations</span>
+      <span class="tag is-white"><span class="dot dot-poster"></span>Poster session</span>
+      <span class="tag is-white"><span class="dot dot-breakout"></span>Breakout</span>
+      <span class="tag is-white"><span class="dot dot-other"></span>Other</span>
+    </div>
+
+    <table class="table is-striped is-fullwidth schedule-table">
+      <thead>
+        <tr>
+          <th>Time</th>
+          <th>Speaker / Moderator</th>
+          <th>Title</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for s in site.data.content.schedule %}
+        <tr>
+          <td class="schedule-time"><span class="dot dot-{{ s.type }}"></span>{{ s.time }}</td>
+          <td class="schedule-who">{{ s.who }}</td>
+          <td class="schedule-title">{{ s.title }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>

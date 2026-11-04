@@ -1,295 +1,184 @@
 ---
-layout: coverpage
+layout: default
+show_links: true
+banner: /images/ICRA_banner.png
 ---
 
-<div class="row main-content description-section">
-  <div class="break"></div>
-  <p>
-    Vision-Language-Action (VLA) and robotic foundation models are now a dominant paradigm, but evaluation practices remain fragmented across platforms, tasks, datasets, embodiments, and experimental protocols. A single task-success rate rarely explains how a policy behaves, why it fails, whether it generalizes, or how robustly it operates outside its evaluation setting. The LLM and VLM communities worked through a version of this problem by moving to holistic, multi-metric, reproducible evaluation. Robotics has reached the same inflection point, but the transition is harder here, because a policy cannot be evaluated by an API call.
-  </p>
-  <p>
-    This workshop focuses on <strong>mobile robots in unstructured and real-world environments</strong>. Unlike many tabletop or simulation settings, these environments cannot be reset exactly: episodes can be long and interrupted, conditions change between trials, platforms differ, and large-scale evaluation is expensive and weather-dependent. Even the unit of evaluation, the trial itself, becomes unclear.
-  </p>
-  <p>
-    We bring together researchers from academia and industry who build foundation models, benchmarks, real-world robot systems, and measurement standards to address: what constitutes a fair trial; how to distinguish genuine generalization from a fortunate test distribution; how to evaluate policies when they cannot be centrally executed on every platform; how many trials are sufficient and what must be reported; and which behavioral, robustness, safety, intervention, and deployment-cost metrics are actually measurable in the field.
-  </p>
-</div>
+<section class="section">
+  <div class="container is-max-desktop">
 
-<div class="row main-content">
-  <h2>Why ICRA 2027</h2>
-  <div class="break"></div>
-  <p>
-    Robot learning is advancing faster than the evaluation methodology needed to compare systems fairly and responsibly. New models, datasets, and deployment platforms are appearing rapidly, yet the community still lacks a shared framework for answering a fundamental question: how should these systems be compared fairly, reproducibly, and meaningfully?
-  </p>
-  <p>
-    Much of robot-learning benchmarking has been developed around simulation or controlled laboratory settings, where scenes can be reset, trials repeated, and conditions held approximately constant. Physical robots operating in unstructured environments violate many of these assumptions. As foundation models move from simulation and controlled demonstrations toward real robotic systems, evaluation must address generalization, robustness, repeatability, safety, intervention, efficiency, failure modes, and environmental variability alongside task success.
-  </p>
-  <p>
-    ICRA 2027 is a timely venue to advance a community discussion around holistic benchmarking, standardization, and reproducible real-world evaluation, and to identify practical steps toward evaluation practices that can scale with the next generation of robot learning systems.
-  </p>
-</div>
-
-<div class="row main-content">
-  <h2>Topics</h2>
-  <div class="break"></div>
-  <ul class="topics-list">
-    <li>What constitutes a fair trial when the world cannot be reset?</li>
-    <li>How do we distinguish genuine generalization from a fortunate test distribution?</li>
-    <li>How can policies be evaluated when they cannot be centrally executed on every platform?</li>
-    <li>How many trials are sufficient, and what must be reported alongside the number?</li>
-    <li>Which behavioral, robustness, safety, and intervention metrics are measurable in the field?</li>
-    <li>Which metrics should accompany task-success rate?</li>
-    <li>How should evaluation account for embodiment, environmental variation, and deployment cost?</li>
-    <li>Reproducible real-world benchmarking and reporting protocols for robotic foundation models</li>
-  </ul>
-</div>
-
-<div class="row main-content">
-  <h2>Format</h2>
-  <div class="break"></div>
-  <p>
-    The half-day, in-person workshop is designed around active exchange rather than a sequence of invited talks. It combines invited perspectives from academia and industry with an open call for short, non-archival papers, a poster session, and three contributed spotlight presentations. A substantial part of the program is reserved for participant polling, moderated breakout groups on metrics, generalization, real-world protocols, and reporting standards, report-backs, and a moderated debate between industry and academia that explicitly invites disagreement about evidence, robustness, safety, and reproducibility. See the <a href="schedule.html">schedule</a> for details.
-  </p>
-  <p>
-    To encourage broad participation, the workshop includes Best Student Presentation and Best Poster awards sponsored by NVIDIA, together with two travel grants for underrepresented students or postdocs provided by the IEEE RAS Robot Learning Technical Committee.
-  </p>
-</div>
-
-<div class="row main-content">
-  <h2>Expected Outcomes</h2>
-  <div class="break"></div>
-  <ul>
-    <li>A shared set of practical recommendations for trial definitions, reporting protocols, multi-metric evaluation, and reproducible real-world benchmarking.</li>
-    <li>A prioritized list of open research questions.</li>
-    <li>A continuing community mechanism through the IEEE RAS Robot Learning Technical Committee and related standardization and benchmarking activities.</li>
-  </ul>
-  <p>
-    Slides and accepted non-archival contributions (where permitted) will be posted on this website after the workshop. Discussion outputs and recommendations will be consolidated and published within four weeks after the event.
-  </p>
-</div>
-
-<div class="row main-content">
-  <p>
-    We invite <strong>short, non-archival papers</strong>. Selected contributions will be presented as posters, and three papers will be invited for spotlight presentations. Read the <a href="submit.html">call for papers</a> for more details.
-  </p>
-</div>
-
-<div class="row main-content">
-  <h2>Important Dates and Links</h2>
-  <p>
-  <table class="table table-striped">
-    <tbody>
-      <tr>
-        <td>Workshop announcement and call for papers</td>
-        <td>31 January 2027</td>
-      </tr>
-      <tr>
-        <td>Submission site</td>
-        <td>OpenReview (link TBA)</td>
-      </tr>
-      <tr>
-        <td>Submission deadline</td>
-        <td>20 March 2027</td>
-      </tr>
-      <tr>
-        <td>Decisions announced</td>
-        <td>20 April 2027</td>
-      </tr>
-      <tr>
-        <td>Camera-ready due</td>
-        <td>TBA</td>
-      </tr>
-      <tr>
-        <td>Workshop date and room</td>
-        <td>TBA</td>
-      </tr>
-    </tbody>
-  </table>
-  </p>
-</div>
-
-<div id="speakers" class="row main-content">
-  <h2>Invited Speakers</h2>
-  <div class="break"></div>
-  <div class="container" style="max-width: 1140px;">
-    <div class="row align-items-start mb-4">
-
-      <div class="col-md-3 text-center">
-        <img class="person-photo person-photo-lg" src="images/speakers/park.webp" alt="Prof. Hae-Won Park">
+    <!-- Overview -->
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3 has-text-centered">Overview</h2>
+        <div class="content">
+          <p>
+            Vision-Language-Action (VLA) and robotic foundation models are now a dominant paradigm, but evaluation practices remain fragmented across platforms, tasks, datasets, embodiments, and experimental protocols. A single task-success rate rarely explains how a policy behaves, why it fails, whether it generalizes, or how robustly it operates outside its evaluation setting. The LLM and VLM communities worked through a version of this problem by moving to holistic, multi-metric, reproducible evaluation. Robotics has reached the same inflection point, but the transition is harder here, because a policy cannot be evaluated by an API call.
+          </p>
+          <p>
+            This workshop focuses on <strong>mobile robots in unstructured and real-world environments</strong>. Unlike many tabletop or simulation settings, these environments cannot be reset exactly: episodes can be long and interrupted, conditions change between trials, platforms differ, and large-scale evaluation is expensive and weather-dependent. Even the unit of evaluation, the trial itself, becomes unclear.
+          </p>
+          <p>
+            We bring together researchers from academia and industry who build foundation models, benchmarks, real-world robot systems, and measurement standards to address: what constitutes a fair trial; how to distinguish genuine generalization from a fortunate test distribution; how to evaluate policies when they cannot be centrally executed on every platform; how many trials are sufficient and what must be reported; and which behavioral, robustness, safety, intervention, and deployment-cost metrics are actually measurable in the field.
+          </p>
+        </div>
       </div>
-      <div class="col-md-9">
-        <h4 class="section-heading">Prof. Hae-Won Park</h4>
-        <h5 class="section-heading"><i>KAIST</i></h5>
-        <p><strong>Talk title:</strong> TBA</p>
-      </div>
-      <hr>
+    </div>
 
-      <div class="col-md-3 text-center">
-        <img class="person-photo person-photo-lg" src="images/speakers/yang.png" alt="Dr. Xuning Yang">
+    <!-- Why ICRA 2027 -->
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Why ICRA 2027</h2>
+        <div class="content">
+          <p>
+            Robot learning is advancing faster than the evaluation methodology needed to compare systems fairly and responsibly. New models, datasets, and deployment platforms are appearing rapidly, yet the community still lacks a shared framework for answering a fundamental question: how should these systems be compared fairly, reproducibly, and meaningfully?
+          </p>
+          <p>
+            Much of robot-learning benchmarking has been developed around simulation or controlled laboratory settings, where scenes can be reset, trials repeated, and conditions held approximately constant. Physical robots operating in unstructured environments violate many of these assumptions. As foundation models move from simulation and controlled demonstrations toward real robotic systems, evaluation must address generalization, robustness, repeatability, safety, intervention, efficiency, failure modes, and environmental variability alongside task success.
+          </p>
+          <p>
+            ICRA 2027 is a timely venue to advance a community discussion around holistic benchmarking, standardization, and reproducible real-world evaluation, and to identify practical steps toward evaluation practices that can scale with the next generation of robot learning systems.
+          </p>
+        </div>
       </div>
-      <div class="col-md-9">
-        <h4 class="section-heading">Dr. Xuning Yang</h4>
-        <h5 class="section-heading"><i>NVIDIA Seattle Robotics Lab</i></h5>
-        <p><strong>Talk title:</strong> TBA</p>
-      </div>
-      <hr>
+    </div>
 
-      <div class="col-md-3 text-center">
-        <img class="person-photo person-photo-lg" src="images/speakers/khattak.jpeg" alt="Dr. Shehryar Khattak">
+    <!-- Topics -->
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Topics</h2>
+        <div class="content">
+          {% include topics.html %}
+        </div>
       </div>
-      <div class="col-md-9">
-        <h4 class="section-heading">Dr. Shehryar Khattak</h4>
-        <h5 class="section-heading"><i>Director of Technology, Field AI</i></h5>
-        <p><strong>Talk title:</strong> TBA</p>
-      </div>
-      <hr>
+    </div>
 
-      <div class="col-md-3 text-center">
-        <img class="person-photo person-photo-lg" src="images/speakers/kress-gazit.png" alt="Prof. Hadas Kress-Gazit">
+    <!-- Format -->
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Format</h2>
+        <div class="content">
+          <p>
+            The half-day, in-person workshop is designed around active exchange rather than a sequence of invited talks. It combines invited perspectives from academia and industry with an open call for short, non-archival papers, a poster session, and three contributed spotlight presentations. A substantial part of the program is reserved for participant polling, moderated breakout groups on metrics, generalization, real-world protocols, and reporting standards, report-backs, and a moderated debate between industry and academia that explicitly invites disagreement about evidence, robustness, safety, and reproducibility. See the <a href="{{ '/schedule.html' | relative_url }}">schedule</a> for details.
+          </p>
+          <p>
+            To encourage broad participation, the workshop includes Best Student Presentation and Best Poster awards sponsored by NVIDIA, together with two travel grants for underrepresented students or postdocs provided by the IEEE RAS Robot Learning Technical Committee.
+          </p>
+        </div>
       </div>
-      <div class="col-md-9">
-        <h4 class="section-heading">Prof. Hadas Kress-Gazit</h4>
-        <h5 class="section-heading"><i>Cornell University / Toyota Research Institute</i></h5>
-        <p><strong>Talk title:</strong> TBA</p>
-      </div>
+    </div>
 
+    <!-- Expected Outcomes -->
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Expected Outcomes</h2>
+        <div class="content">
+          <ul>
+            <li>A shared set of practical recommendations for trial definitions, reporting protocols, multi-metric evaluation, and reproducible real-world benchmarking.</li>
+            <li>A prioritized list of open research questions.</li>
+            <li>A continuing community mechanism through the IEEE RAS Robot Learning Technical Committee and related standardization and benchmarking activities.</li>
+          </ul>
+          <p>
+            Slides and accepted non-archival contributions (where permitted) will be posted on this website after the workshop. Discussion outputs and recommendations will be consolidated and published within four weeks after the event.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Call to action -->
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <div class="notification is-light cfp-callout">
+          We invite <strong>short, non-archival papers</strong>. Selected contributions will be presented as posters, and three papers will be invited for spotlight presentations. Read the <a href="{{ '/submit.html' | relative_url }}">call for papers</a> for more details.
+        </div>
+      </div>
+    </div>
+
+    <!-- Important dates -->
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Important Dates and Links</h2>
+        {% include dates.html %}
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Speakers -->
+<section class="section has-background-light" id="speakers">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Invited Speakers</h2>
+    <div class="columns is-multiline is-mobile is-centered">
+      {% for p in site.data.content.speakers %}
+      <div class="column is-half-mobile is-one-quarter-tablet">
+        {% include person.html person=p large=true %}
+      </div>
+      {% endfor %}
     </div>
   </div>
-</div>
+</section>
 
-<div id="panelists" class="row main-content">
-  <h2>Debate Panelists</h2>
-  <div class="break"></div>
-  <p>
-    A moderated debate between industry and academia on what a benchmark for real-world robot learning should actually measure.
-  </p>
-  <div class="container" style="max-width: 1140px;">
-    <div class="row align-items-start mb-4">
-
-      <div class="col-md-3 text-center">
-        <img class="person-photo person-photo-lg" src="images/speakers/hsu.png" alt="Prof. David Hsu">
+<!-- Panelists -->
+<section class="section" id="panelists">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Debate Panelists</h2>
+    <p class="has-text-centered section-intro">
+      A moderated debate between industry and academia on what a benchmark for real-world robot learning should actually measure.
+    </p>
+    <div class="columns is-multiline is-mobile is-centered">
+      {% for p in site.data.content.panelists %}
+      <div class="column is-half-mobile is-one-quarter-tablet">
+        {% include person.html person=p large=true %}
       </div>
-      <div class="col-md-9">
-        <h4 class="section-heading">Prof. David Hsu</h4>
-        <h5 class="section-heading"><i>NVIDIA Singapore</i></h5>
-      </div>
-      <hr>
-
-      <div class="col-md-3 text-center">
-        <img class="person-photo person-photo-lg" src="images/speakers/schoellig.png" alt="Prof. Angela Schoellig">
-      </div>
-      <div class="col-md-9">
-        <h4 class="section-heading">Prof. Angela Schoellig</h4>
-        <h5 class="section-heading"><i>Technical University of Munich (TUM)</i></h5>
-      </div>
-      <hr>
-
-      <div class="col-md-3 text-center">
-        <img class="person-photo person-photo-lg" src="images/speakers/maddern.png" alt="Dr. Will Maddern">
-      </div>
-      <div class="col-md-9">
-        <h4 class="section-heading">Dr. Will Maddern</h4>
-        <h5 class="section-heading"><i>Wayve</i></h5>
-      </div>
-
+      {% endfor %}
     </div>
   </div>
-</div>
+</section>
 
-<div id="organizers" class="row main-content">
-  <h2>Organizers</h2>
-  <div class="break"></div>
-  <p>
-    The organizing team brings together senior and early-career researchers across academia and industry, spanning robotic foundation models, benchmarking, datasets, and real-world robot deployment. The team includes research leaders from Toyota Research Institute (TRI), NVIDIA, CSIRO, the University of Freiburg, and the National University of Singapore, alongside early-career researchers from Stanford/BAIR, the University of Washington, and the University of Freiburg. Collectively, the organizers have delivered workshops, tutorials, challenges, and technical programs at ICRA, IROS, RSS, CoRL, CVPR, NeurIPS, ICCV, ACCV, and related venues. The workshop is supported by two Co-Chairs of the IEEE RAS Technical Committee on Robot Learning and aligns with its activities on standardization and benchmarking for real-world robot learning.
-  </p>
-  <p>
-    Primary IEEE RAS Technical Committee: Robot Learning. Secondary: Computer &amp; Robot Vision; Verification of Autonomous Systems; Algorithms for Planning and Control of Robot Motion.
-  </p>
-<div class="container">
-    <div class="row justify-content-center">
-
-      <div class="col-sm-3">
-        <center><img class="person-photo" src="images/organizers/moghadam.jpeg" alt="Peyman Moghadam"></center>
-        <a href="https://openreview.net/profile?id=~Peyman_Moghadam1">
-          <h4 class="section-heading"><center>Peyman Moghadam</center></h4>
-        </a>
-        <h5 class="section-heading"><center><i>CSIRO &amp; Queensland University of Technology</i></center></h5>
+<!-- Organizers -->
+<section class="section has-background-light" id="organizers">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Organizers</h2>
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <div class="content">
+          <p>
+            The organizing team brings together senior and early-career researchers across academia and industry, spanning robotic foundation models, benchmarking, datasets, and real-world robot deployment. The team includes research leaders from Toyota Research Institute (TRI), NVIDIA, CSIRO, the University of Freiburg, and the National University of Singapore, alongside early-career researchers from Stanford/BAIR, the University of Washington, and the University of Freiburg. Collectively, the organizers have delivered workshops, tutorials, challenges, and technical programs at ICRA, IROS, RSS, CoRL, CVPR, NeurIPS, ICCV, ACCV, and related venues. The workshop is supported by two Co-Chairs of the IEEE RAS Technical Committee on Robot Learning and aligns with its activities on standardization and benchmarking for real-world robot learning.
+          </p>
+          <p>
+            Primary IEEE RAS Technical Committee: Robot Learning. Secondary: Computer &amp; Robot Vision; Verification of Autonomous Systems; Algorithms for Planning and Control of Robot Motion.
+          </p>
+        </div>
       </div>
-
-      <div class="col-sm-3">
-        <center><img class="person-photo" src="images/organizers/itkina.png" alt="Masha Itkina"></center>
-        <a href="https://openreview.net/profile?id=~Masha_Itkina1">
-          <h4 class="section-heading"><center>Masha Itkina</center></h4>
-        </a>
-        <h5 class="section-heading"><center><i>Toyota Research Institute</i></center></h5>
+    </div>
+    <div class="columns is-multiline is-mobile is-centered">
+      {% for p in site.data.content.organizers %}
+      <div class="column is-half-mobile is-one-quarter-tablet">
+        {% include person.html person=p %}
       </div>
-
-      <div class="col-sm-3">
-        <center><img class="person-photo" src="images/organizers/valada.jpg" alt="Abhinav Valada"></center>
-        <a href="https://openreview.net/profile?id=~Abhinav_Valada1">
-          <h4 class="section-heading"><center>Abhinav Valada</center></h4>
-        </a>
-        <h5 class="section-heading"><center><i>University of Freiburg</i></center></h5>
-      </div>
-
-      <div class="col-sm-3">
-        <center><img class="person-photo" src="images/organizers/duan.jpeg" alt="Jiafei Duan"></center>
-        <a href="https://openreview.net/profile?id=~Jiafei_Duan">
-          <h4 class="section-heading"><center>Jiafei Duan</center></h4>
-        </a>
-        <h5 class="section-heading"><center><i>National University of Singapore</i></center></h5>
-      </div>
-
-      <div class="col-sm-3">
-        <center><img class="person-photo" src="images/organizers/barthelemy.png" alt="Johan Barthelemy"></center>
-        <a href="https://openreview.net/profile?id=~Johan_Barthelemy1">
-          <h4 class="section-heading"><center>Johan Barthelemy</center></h4>
-        </a>
-        <h5 class="section-heading"><center><i>NVIDIA</i></center></h5>
-      </div>
-
-      <div class="col-sm-3">
-        <center><img class="person-photo" src="images/organizers/frey.jpeg" alt="Jonas Frey"></center>
-        <a href="https://openreview.net/profile?id=~Jonas_Frey1">
-          <h4 class="section-heading"><center>Jonas Frey</center></h4>
-        </a>
-        <h5 class="section-heading"><center><i>Stanford University / BAIR</i></center></h5>
-      </div>
-
-      <div class="col-sm-3">
-        <center><img class="person-photo" src="images/organizers/chandra.png" alt="Akshay L. Chandra"></center>
-        <a href="https://openreview.net/profile?id=~Akshay_L_Chandra1">
-          <h4 class="section-heading"><center>Akshay L. Chandra</center></h4>
-        </a>
-        <h5 class="section-heading"><center><i>University of Freiburg</i></center></h5>
-      </div>
-
-      <div class="col-sm-3">
-        <center><img class="person-photo" src="images/organizers/scalise.jpg" alt="Rosario Scalise"></center>
-        <a href="https://openreview.net/profile?id=~Rosario_Scalise1">
-          <h4 class="section-heading"><center>Rosario Scalise</center></h4>
-        </a>
-        <h5 class="section-heading"><center><i>University of Washington</i></center></h5>
-      </div>
-
+      {% endfor %}
     </div>
   </div>
-</div>
+</section>
 
-<div id="sponsors" class="row main-content">
-  <h2>Sponsors</h2>
-  <div class="break"></div>
-  <p>
-    The workshop is sponsored by NVIDIA, which supports the Best Student Presentation and Best Poster awards, and is conducted in collaboration with the IEEE RAS Technical Committee on Robot Learning, which will provide two travel grants for underrepresented students or postdocs to attend ICRA 2027.
-  </p>
-  <div class="container">
+<!-- Sponsors -->
+<section class="section" id="sponsors">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Sponsors</h2>
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <div class="content">
+          <p>
+            The workshop is sponsored by NVIDIA, which supports the Best Student Presentation and Best Poster awards, and is conducted in collaboration with the IEEE RAS Technical Committee on Robot Learning, which will provide two travel grants for underrepresented students or postdocs to attend ICRA 2027.
+          </p>
+        </div>
+      </div>
+    </div>
     <div class="sponsor-row">
-      <div class="sponsor-logo">
-        <img src="images/sponsors/Nvidia_logo.png" alt="NVIDIA">
-      </div>
-      <div class="sponsor-logo">
-        <img src="images/sponsors/TCRL-Logo.png" alt="IEEE RAS Technical Committee on Robot Learning">
-      </div>
+      {% for s in site.data.content.sponsors %}
+      <div class="sponsor-logo"><img src="{{ s.logo | relative_url }}" alt="{{ s.name }}" loading="lazy"></div>
+      {% endfor %}
     </div>
   </div>
-</div>
+</section>

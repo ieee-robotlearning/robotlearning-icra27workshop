@@ -1,0 +1,149 @@
+# Speakers, organizers, sponsors, dates and topics. Images live under /images/
+
+speakers:
+  - name: Prof. Hae-Won Park
+    affiliation: KAIST
+    photo: images/speakers/park.webp
+    talk: TBA
+  - name: Dr. Xuning Yang
+    affiliation: NVIDIA Seattle Robotics Lab
+    photo: images/speakers/yang.png
+    talk: TBA
+  - name: Dr. Shehryar Khattak
+    affiliation: Director of Technology, Field AI
+    photo: images/speakers/khattak.jpeg
+    talk: TBA
+  - name: Prof. Hadas Kress-Gazit
+    affiliation: Cornell University / Toyota Research Institute
+    photo: images/speakers/kress-gazit.png
+    talk: TBA
+
+panelists:
+  - name: Prof. David Hsu
+    affiliation: NVIDIA Singapore
+    photo: images/speakers/hsu.png
+  - name: Prof. Angela Schoellig
+    affiliation: Technical University of Munich (TUM)
+    photo: images/speakers/schoellig.png
+  - name: Dr. Will Maddern
+    affiliation: Wayve
+    photo: images/speakers/maddern.png
+
+organizers:
+  - name: Peyman Moghadam
+    affiliation: CSIRO &amp; Queensland University of Technology
+    photo: images/organizers/moghadam.jpeg
+    url: https://openreview.net/profile?id=~Peyman_Moghadam1
+  - name: Masha Itkina
+    affiliation: Toyota Research Institute
+    photo: images/organizers/itkina.png
+    url: https://openreview.net/profile?id=~Masha_Itkina1
+  - name: Abhinav Valada
+    affiliation: University of Freiburg
+    photo: images/organizers/valada.jpg
+    url: https://openreview.net/profile?id=~Abhinav_Valada1
+  - name: Jiafei Duan
+    affiliation: National University of Singapore
+    photo: images/organizers/duan.jpeg
+    url: https://openreview.net/profile?id=~Jiafei_Duan
+  - name: Johan Barthelemy
+    affiliation: NVIDIA
+    photo: images/organizers/barthelemy.png
+    url: https://openreview.net/profile?id=~Johan_Barthelemy1
+  - name: Jonas Frey
+    affiliation: Stanford University / BAIR
+    photo: images/organizers/frey.jpeg
+    url: https://openreview.net/profile?id=~Jonas_Frey1
+  - name: Akshay L. Chandra
+    affiliation: University of Freiburg
+    photo: images/organizers/chandra.png
+    url: https://openreview.net/profile?id=~Akshay_L_Chandra1
+  - name: Rosario Scalise
+    affiliation: University of Washington
+    photo: images/organizers/scalise.jpg
+    url: https://openreview.net/profile?id=~Rosario_Scalise1
+
+sponsors:
+  - name: NVIDIA
+    logo: images/sponsors/Nvidia_logo.png
+  - name: IEEE RAS Technical Committee on Robot Learning
+    logo: images/sponsors/TCRL-Logo.png
+
+# Shared by the About and Call for Papers pages
+dates:
+  - label: Workshop announcement and call for papers
+    date: 31 January 2027
+  - label: Submission site
+    date: OpenReview (link TBA)
+  - label: Submission deadline
+    date: 20 March 2027
+  - label: Reviews
+    date: April 2027
+    cfp_only: true
+  - label: Decisions announced
+    date: 20 April 2027
+  - label: Camera-ready due
+    date: TBA
+  - label: Workshop date and room
+    date: TBA
+
+topics:
+  - What constitutes a fair trial when the world cannot be reset?
+  - How do we distinguish genuine generalization from a fortunate test distribution?
+  - How can policies be evaluated when they cannot be centrally executed on every platform?
+  - How many trials are sufficient, and what must be reported alongside the number?
+  - Which behavioral, robustness, safety, and intervention metrics are measurable in the field?
+  - Which metrics should accompany task-success rate?
+  - How should evaluation account for embodiment, environmental variation, and deployment cost?
+  - Reproducible real-world benchmarking and reporting protocols for robotic foundation models
+
+# Schedule. type is one of: other, invited, spotlight, poster, breakout, panel
+schedule:
+  - time: "08:30 – 08:45"
+    type: other
+    who: Organizers
+    title: "Opening and framing: How should we evaluate robot learning in the foundation-model era? Participant polling"
+  - time: "08:45 – 09:05"
+    type: invited
+    who: Prof. Hae-Won Park (KAIST)
+    title: Talk title TBA
+  - time: "09:05 – 09:25"
+    type: invited
+    who: Dr. Xuning Yang (NVIDIA Seattle Robotics Lab)
+    title: Talk title TBA
+  - time: "09:25 – 09:45"
+    type: invited
+    who: Dr. Shehryar Khattak (Director of Technology, Field AI)
+    title: Talk title TBA
+  - time: "09:45 – 10:05"
+    type: invited
+    who: Prof. Hadas Kress-Gazit (Cornell / TRI)
+    title: Talk title TBA
+  - time: "10:05 – 10:20"
+    type: spotlight
+    who: Contributed authors
+    title: Three contributed spotlight presentations
+  - time: "10:20 – 10:55"
+    type: poster
+    who: ""
+    title: Poster session and coffee
+  - time: "10:55 – 11:25"
+    type: breakout
+    who: All participants
+    title: "Breakout discussions: metrics, generalization, real-world protocols and reporting standards"
+  - time: "11:25 – 11:40"
+    type: breakout
+    who: Breakout groups
+    title: Breakout report-back
+  - time: "11:40 – 12:15"
+    type: panel
+    who: Prof. David Hsu (NVIDIA Singapore), Prof. Angela Schoellig (TUM), Dr. Will Maddern (Wayve)
+    title: "Moderated debate with industry and academia: What should a benchmark for real-world robot learning actually measure?"
+  - time: "12:15 – 12:25"
+    type: other
+    who: Organizers
+    title: Best Student Presentation and Best Poster awards; community next steps
+  - time: "12:25 – 12:30"
+    type: other
+    who: Organizers
+    title: Closing

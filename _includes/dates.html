@@ -1,0 +1,13 @@
+<div class="table-container">
+  <table class="table is-striped is-fullwidth dates-table">
+    <tbody>
+      {% for d in site.data.content.dates %}
+      {% if d.cfp_only and include.page != "cfp" %}{% continue %}{% endif %}
+      <tr>
+        <td>{{ d.label }}</td>
+        <td class="has-text-weight-semibold">{{ d.date }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
