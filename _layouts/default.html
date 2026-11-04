@@ -1,97 +1,124 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Robot Learning in the Era of Foundation Models</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-    crossorigin="anonymous"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:image" content="images/preview.JPG" />
-  <meta name="twitter:image" content="images/preview.JPG" />
-  <meta name="twitter:card" content="summary" />
-  <meta name="description" content="ICRA 2027 half-day workshop on standardization, benchmarking, and real-world evaluation of robot learning in the era of foundation models." />
-  <script>
-    /* JavaScript module code here */
-    function localize_time(timeString) {
-      var hours = timeString.split(":")[0].padStart(2, "0");
-      var minutes = timeString.split(":")[1].padStart(2, "0");
-      var datetime = new Date('1970-01-02T' + hours + ":" + minutes + ':00Z');
-      return datetime.getHours() + ":" + datetime.getMinutes().toString().padStart(2, "0");
-    }
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <meta name="keywords" content="robot learning, foundation models, VLA, benchmarking, evaluation, ICRA 2027, workshop">
+  <meta property="og:title" content="{{ site.title }}">
+  <meta property="og:description" content="{{ site.description }}">
+  <meta property="og:image" content="{{ '/images/preview.JPG' | absolute_url }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ site.title }}">
+  <meta name="twitter:description" content="{{ site.description }}">
+  <meta name="twitter:image" content="{{ '/images/preview.JPG' | absolute_url }}">
 
-    function adjustTimes() {
-      // change timezone abbreviation in table header
-      tz_abbrev = new Date().toLocaleTimeString('en-us', { timeZoneName: 'short' }).split(' ')[2];
-      document.querySelectorAll(".timezone-abbrev").forEach(node => node.textContent = tz_abbrev);
-      // change times to local timezone
-      document.querySelectorAll(".time-value").forEach(node => node.textContent = localize_time(node.textContent));
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/static/css/bulma.min.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/static/css/index.css' | relative_url }}">
 
-    }
-  </script>
-  <link href="css/style.css" rel="stylesheet">
+  <script defer src="{{ '/static/js/fontawesome.all.min.js' | relative_url }}"></script>
+  <script defer src="{{ '/static/js/index.js' | relative_url }}"></script>
 </head>
+<body>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
-
-  <div class="container" id="header">
-
-    <div>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-main"
-        aria-controls="navbar-main" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </div> <!-- navbar-header -->
-
-    <div class="collapse navbar-collapse" id="navbar-main">
-      <ul class="navbar-nav mx-auto">
-        <li class="nav-link"><a href="{{ '/index.html' | relative_url }}">About</a></li>
-        <li class="nav-link"><a href="{{ '/submit.html' | relative_url }}">Call for Papers</a></li>
-        <li class="nav-link"><a href="{{ '/schedule.html' | relative_url }}">Schedule</a></li>
-        <li class="nav-link"><a href="{{ '/papers.html' | relative_url }}">Papers</a></li>
-
-      </ul>
-
-    </div> <!-- navbar-main -->
-
-  </div>
-
-</nav> <!-- navbar -->
-
-<body onload="adjustTimes();">
-
-  <div id="content-wrap">
-    <div class="container" id="content">
-
-      <section id="hero-section" class="hero-heading">
-        <h1>Robot Learning in the Era of Foundation Models: Standardization, Benchmarking and Real-World Evaluation</h1>
-        <h4>ICRA 2027 Half-day Workshop</h4>
-        <p>Date: TBA</p>
-        <p class="venue">Venue: TBA</p>
-      </section>
-
-      <div class="page-content">
-
-        {{ content }}
-
-      </div> <!-- page-content -->
-
-    </div> <!-- container -->
-  </div> <!-- content-wrap -->
-
-
-  <div class="footnote bg-light">
-    <div class="container">
-      <p>For questions / comments, reach out to: Peyman Moghadam (<a href="mailto:peyman.moghadam@qut.edu.au">peyman.moghadam@qut.edu.au</a>)</p>
-      <p>Website template adapted from the <a href="https://orlrworkshop.github.io/">ORLR</a>/<a
-          href="https://oolworkshop.github.io/">OOL</a> workshops, originally based on the template of the <a
-          href="https://baicsworkshop.github.io/">BAICS</a> workshop.</p>
+<nav class="navbar is-spaced" role="navigation" aria-label="main navigation">
+  <div class="container is-max-desktop">
+    <div class="navbar-brand">
+      <a class="navbar-item brand-title" href="{{ '/' | relative_url }}">
+        Robot Learning <span class="brand-sep">@</span> ICRA 2027
+      </a>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="nav-menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="navbar-menu" id="nav-menu">
+      <div class="navbar-end">
+        {% for item in site.nav %}
+        <a class="navbar-item{% if page.url == item.url %} is-active{% endif %}"
+           href="{{ item.url | relative_url }}">{{ item.name }}</a>
+        {% endfor %}
+      </div>
     </div>
   </div>
-</body>
+</nav>
 
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-2 publication-title">{{ site.workshop.title }}</h1>
+          <p class="is-size-5 publication-subtitle">{{ site.workshop.subtitle }}</p>
+          <div class="is-size-6 publication-meta">
+            <span class="meta-block"><span class="icon"><i class="far fa-calendar"></i></span>Date: {{ site.workshop.date }}</span>
+            <span class="meta-block"><span class="icon"><i class="fas fa-map-marker-alt"></i></span>Venue: {{ site.workshop.venue }}</span>
+          </div>
+
+          {% if page.show_links %}
+          <div class="publication-links">
+            <span class="link-block">
+              <a href="{{ '/submit.html' | relative_url }}" class="button is-normal is-rounded is-dark">
+                <span class="icon"><i class="fas fa-file-alt"></i></span>
+                <span>Call for Papers</span>
+              </a>
+            </span>
+            <span class="link-block">
+              <a href="{{ '/schedule.html' | relative_url }}" class="button is-normal is-rounded is-dark">
+                <span class="icon"><i class="far fa-clock"></i></span>
+                <span>Schedule</span>
+              </a>
+            </span>
+            <span class="link-block">
+              <a {% if site.workshop.openreview %}href="{{ site.workshop.openreview }}"{% else %}disabled{% endif %} class="button is-normal is-rounded is-dark">
+                <span class="icon"><i class="fas fa-upload"></i></span>
+                <span>Submit{% unless site.workshop.openreview %} (TBA){% endunless %}</span>
+              </a>
+            </span>
+          </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% if page.banner %}
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img class="teaser-image" src="{{ page.banner | relative_url }}" alt="ICRA 2027 banner">
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<main>
+{{ content }}
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content has-text-centered">
+          <p>
+            Questions or comments: {{ site.contact.name }}
+            (<a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a>)
+          </p>
+          <p class="is-size-7">
+            Website template adapted from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>,
+            licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
 </html>

@@ -1,0 +1,9 @@
+{% assign p = include.person %}
+<div class="person">
+  <img class="person-photo{% if include.large %} is-large{% endif %}" src="{{ p.photo | relative_url }}" alt="{{ p.name }}" loading="lazy">
+  <p class="person-name">
+    {% if p.url %}<a href="{{ p.url }}">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}
+  </p>
+  <p class="person-affiliation">{{ p.affiliation }}</p>
+  {% if p.talk %}<p class="person-talk"><strong>Talk:</strong> {{ p.talk }}</p>{% endif %}
+</div>

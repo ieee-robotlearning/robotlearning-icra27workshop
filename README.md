@@ -2,6 +2,20 @@
 
 Workshop website for the ICRA 2027 half-day workshop on standardization, benchmarking, and real-world evaluation of robot learning.
 
+## Editing content
+
+The site uses the [Nerfies](https://github.com/nerfies/nerfies.github.io) template (Bulma CSS) on Jekyll.
+
+| What | Where |
+|---|---|
+| Title, date, venue, OpenReview link, contact, menu | `_config.yml` |
+| Speakers, panelists, organizers, sponsors, dates, topics, schedule | `_data/content.yml` |
+| Page text | `index.html`, `submit.html`, `schedule.html`, `papers.html` |
+| Shared page frame (menu, header, footer) | `_layouts/default.html` |
+| Styles | `static/css/index.css` |
+
+To add a person, add an entry to `_data/content.yml` and put their photo under `images/`.
+
 ## Local Development (Ubuntu)
 
 1. **Install Ruby and Bundler**
@@ -94,4 +108,4 @@ Open your browser to: [http://localhost:4000/robotlearning-icra27workshop/](http
 If you encounter dependency issues, try removing `Gemfile.lock` and running `bundle install` again.
 
 
-This repository was initialized from a previous workshop page, which is based on https://github.com/simulaterobotworlds/simulaterobotworlds.github.io/, https://github.com/objects-structure-causality/objects-structure-causality.github.io, https://github.com/orlrworkshop/orlrworkshop.github.io, https://github.com/oolworkshop/oolworkshop.github.io, and https://github.com/baicsworkshop/baicsworkshop.github.io/.
+The page design is adapted from the Nerfies project page (CC BY-SA 4.0). This repository was initialized from a previous workshop page, which is based on https://github.com/simulaterobotworlds/simulaterobotworlds.github.io/, https://github.com/objects-structure-causality/objects-structure-causality.github.io, https://github.com/orlrworkshop/orlrworkshop.github.io, https://github.com/oolworkshop/oolworkshop.github.io, and https://github.com/baicsworkshop/baicsworkshop.github.io/.
