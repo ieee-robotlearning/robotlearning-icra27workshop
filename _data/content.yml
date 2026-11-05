@@ -68,6 +68,8 @@ sponsors:
     logo: images/sponsors/Nvidia_logo.png
   - name: IEEE RAS Technical Committee on Robot Learning
     logo: images/sponsors/TCRL-Logo.png
+  - name: IEEE RAS Technical Committee on Computer & Robot Vision
+    logo: images/sponsors/RobotVision.png
 
 # Shared by the About and Call for Papers pages
 dates:
